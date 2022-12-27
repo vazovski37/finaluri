@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div id="layer" >
+    <div id="left_part">
+        <img src="img/firstPage.png" alt="">
+    </div>
+    <div id="right_part">
+        <p class="huge_white display_inline">CHESS SAYS <p class="small_black display_inline">A LOT ABOUT </p></p>
+        <p class="huge_white" > WHO WE ARE  </p>
+
+        <button id="layer_button" class="btn-black"  > 
+            <p style="padding-left: 10px;">get started</p>
+            <img src="img/button.png" class="btn-img" alt="">
+        </button>
+    </div>
+</div>
+<div class="display_none" id="layer_2" >
+    <div id="left_part">
+        <img src="img/firstPage.png" alt="">
+    </div>
+    <div id="right_part">
+        <div id="progress_bar">
+            <div id="progress">
+                <p>1</p>
+                <div class="line"></div>
+                <p>2</p>
+            </div>
+            <div id="progress_text">
+                <p>Personal information</p>
+                <p>Chess experience</p>
+            </div>
+        </div>
+
+        <p style="font-size: 30px;margin-left:20px">Personal information</p>
+        <p style="margin: 0px; margin-left:20px">this is basic information field</p>
+        <form class="margin_left">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="text" id="phone" name="phone"><br><br>
+          </form>
+
+            <div  class="space-between margin_left">
+                <div id="back" >
+                    back
+                </div>
+    
+                <button id="layer_2_button" onclick="validateForm()" class="btn-black_layer_2"  > 
+                    <p style="padding-left: 10px;">next</p>
+                    <img src="img/button.png" class="btn-img" alt="">
+                </button>
+            </div>
+
+    </div>   
+
+</div>
+<div id="layer_3" class="display_none">
+    <div id="left_part">
+        <img src="img/firstPage.png" alt="">
+    </div>
+    <div id="right_part">
+        <div id="progress_bar">
+            <div id="progress">
+                <p>1</p>
+                <div class="line"></div>
+                <p>2</p>
+            </div>
+            <div id="progress_text">
+                <p>Personal information</p>
+                <p>Chess experience</p>
+            </div>
+        </div>
+
+        <p style="font-size: 30px;margin-left:20px">chess experience</p>
+        <p style="margin: 0px; margin-left:20px">this is basic information field</p>
+    
+    
+    <div id="dropdown_div" class="margin_left">
+        <select id="menu" class="dropdown" value="level of knowledge">
+            <option style="display: none;"> level of knowledge</option>
+            <option style="width: 100%;padding: 10px;" class="dopdown_option" >beginner</option>
+            <option class="dopdown_option" >intermediate</option>
+            <option class="dopdown_option" >professional</option>
+        </select>
+
+        <select class="dropdown" id="menu_server_info">
+            <option style="display: none;">choose your character</option>
+        </select> 
+    </div>
+
+
+    <div  class="space-between margin_left">
+        <div id="back_layer2" >
+            back
+        </div>
+
+        <button id="layer_3_button" class="btn-black_layer_2"  > 
+            <p style="padding-left: 10px;">next</p>
+            <img src="img/button.png" class="btn-img" alt="">
+        </button>
+    </div>
+  
+
+       
+
+    </div>   
+</div>
+
+<div id="layer_4" class="display_none">
+    <p id="success"></p>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
